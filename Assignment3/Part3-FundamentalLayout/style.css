@@ -63,3 +63,7 @@ nav {
   top: 0;
   position: sticky;
 }
+.feature {
+  float: left;
+  margin: 5px 30px 20px 0;
+}
