@@ -37,5 +37,9 @@ h2 {
 }
 
 a {
-  color: green;
+  color: green;  
+}
+a:hover,
+a:focus {
+  color: darkgreen;
 }
