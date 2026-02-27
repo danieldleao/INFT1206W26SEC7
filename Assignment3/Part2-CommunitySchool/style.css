@@ -34,3 +34,15 @@ footer {
 footer p {
   text-align: center;
 }
+
+html {
+  font-family: 'montserrat', sans-serif;
+  background-color: #cccccc;
+}
+h1 {
+  font-family: 'graduate', serif;
+  color: darkblue;
+}
+h2 {
+  font-family: 'goblin one', cursive;
+}
