@@ -1,0 +1,8 @@
+Part 1: Biography Page
+https://danieldleao.github.io/INFT1206W26SEC7/Assignment3/Part1-BiographyPage/index.html
+
+Part 2: Community School
+https://danieldleao.github.io/INFT1206W26SEC7/Assignment3/Part2-CommunitySchool/index.html
+
+Part 3: Fundamental Layout
+https://danieldleao.github.io/INFT1206W26SEC7/Assignment3/Part3-FundamentalLayout/index.html
