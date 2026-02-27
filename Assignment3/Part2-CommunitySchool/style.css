@@ -37,12 +37,24 @@ footer p {
 
 html {
   font-family: 'montserrat', sans-serif;
-  background-color: #cccccc;
+  background-color: #dadada;
 }
 h1 {
   font-family: 'graduate', serif;
   color: darkblue;
+  font-size: 3rem;
+  text-align: center;
+  letter-spacing: 5px;
+  font-weight: bold;
+  font-weight: bolder;
 }
 h2 {
   font-family: 'goblin one', cursive;
+  color: rgb(90, 90, 90);
+  font-size: 16px;
+  letter-spacing: 2px;
+  margin-bottom: 0;
+}
+section h2 + p {
+  text-indent: 2rem;
 }
