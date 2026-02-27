@@ -59,3 +59,7 @@ nav ul {
   display: flex;
   justify-content: space-around;
 }
+nav {
+  top: 0;
+  position: sticky;
+}
