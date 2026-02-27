@@ -88,3 +88,34 @@ ol {
 ul, ol {
   margin: 30px;
 }
+
+
+nav li {
+  list-style-type: none;
+  margin-bottom: 1rem;
+}
+nav ul {
+  padding-left: 0;
+}
+nav li a {
+  font-family: 'graduate', serif;
+  display: inline-block;
+  width: 110%;
+  line-height: 3;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 3px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border: 5px solid #aa6666;
+  text-decoration: none;
+}
+nav li a:focus,
+nav li a:hover {
+  color: white;
+  background: #aa6666;
+}
+nav li a:active {
+  color: white;
+  background: black;
+}
