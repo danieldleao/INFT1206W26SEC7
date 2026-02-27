@@ -55,14 +55,13 @@ h2 {
   letter-spacing: 2px;
   margin-bottom: 0;
 }
-section h2 + p {
+section h2, p {
   text-indent: 2rem;
 }
 a {
   color: #229e83;
 }
-a:hover,
-a:focus {
+a:hover, a:focus {
   color: #00b80f;
   text-decoration: none;
 }
@@ -75,4 +74,17 @@ a[href*="http"] {
   padding-right: 20px;
   background: url("external-link-52.png") no-repeat right center;
   background-size: 20px 20px;
+}
+p, li {
+  line-height: 1.6;
+  letter-spacing: 0.7px;
+}
+ul {
+  list-style-type: square;
+}
+ol {
+  list-style-type: upper-roman;
+}
+ul, ol {
+  margin: 30px;
 }
