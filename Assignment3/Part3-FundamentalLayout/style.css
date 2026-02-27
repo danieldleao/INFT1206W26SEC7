@@ -72,3 +72,8 @@ nav {
   grid-template-columns: 3fr 1fr;
   gap: 20px;
 }
+.photos {
+  display: grid;
+  gap: 5px;
+  grid-template-columns: 1fr 1fr;
+}
