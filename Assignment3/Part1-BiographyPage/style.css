@@ -24,6 +24,7 @@ ul {
 h1 {
   color: darkslategray;
   border-bottom: 10px dotted purple;
+  font-size: 2rem;
 }
 
 h2 {
