@@ -58,3 +58,21 @@ h2 {
 section h2 + p {
   text-indent: 2rem;
 }
+a {
+  color: #229e83;
+}
+a:hover,
+a:focus {
+  color: #00b80f;
+  text-decoration: none;
+}
+a:visited {
+  color: blue;
+}a:active {
+  color: red;
+}
+a[href*="http"] {
+  padding-right: 20px;
+  background: url("external-link-52.png") no-repeat right center;
+  background-size: 20px 20px;
+}
