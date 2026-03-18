@@ -1,0 +1,42 @@
+/*
+Durham College - Computer Programming and Analysis
+INFT 1206 Web Development Fundamentals [Dr. Muath Alzghool]
+Daniel Doro Leao
+Date: 2026-03-18
+Activity Name: Assignment 4 – Part 1: Silly Story Generator
+*/
+
+body {
+    font: 1.2em / 1.5 system-ui;
+    margin: 0 auto;
+    width: 500px;
+}
+
+fieldset {
+    border: 0;
+}
+
+fieldset,
+legend {
+    padding: 0;
+    margin: 0;
+}
+
+input[type="text"] {
+    margin-top: 5px;
+    padding: 5px;
+    width: 50%;
+    display: block;
+}
+
+div,
+fieldset {
+    margin-top: 20px;
+}
+
+p {
+    margin-top: 10px;
+    background: #ffc125;
+    padding: 20px;
+    visibility: hidden;
+}
