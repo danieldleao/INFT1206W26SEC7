@@ -39,3 +39,21 @@ for (const image of images) {
         }
     });
 }
+// Function to update the displayed image
+function updateDisplayedImage() {
+    displayedImage.setAttribute("src", this.getAttribute("src"));
+    displayedImage.setAttribute("alt", this.getAttribute("alt"));
+}
+// Function to toggle the darken class on the overlay
+btn.addEventListener("click", () => {
+    if (btn.textContent === "Darken") {
+        overlay.classList.add("darken");
+        btn.textContent = "Lighten";
+    } else {
+        overlay.classList.remove("darken");
+        btn.textContent = "Darken";
+    }
+
+    // Toggle the darken class on the overlay using keyboard
+    btn.classList.toggle("darken");
+});
