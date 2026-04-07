@@ -1,0 +1,34 @@
+/*
+Durham College - Computer Programming and Analysis
+INFT 1206 Web Development Fundamentals [Dr. Muath Alzghool]
+Daniel Doro Leao
+Date: 2026-03-18
+Activity Name: Assignment 4 – Part 3: Bounce Balls
+*/
+
+html,
+body {
+    margin: 0;
+}
+
+html {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    height: 100%;
+}
+
+body {
+    overflow: hidden;
+    height: inherit;
+}
+
+h1 {
+    font-size: 2rem;
+    letter-spacing: -1px;
+    position: absolute;
+    margin: 0;
+    top: -4px;
+    right: 5px;
+
+    color: transparent;
+    text-shadow: 0 0 4px white;
+}
