@@ -31,10 +31,31 @@ function randomValueFromArray(array) {
 // melted into a puddle on the sidewalk
 // turned into a slug and slithered away
 
+const characters = ["Willy the Goblin", "Big Daddy", "Father Christmas"];
+const locations = ["the soup kitchen", "Disneyland", "the White House"];
+const actions = [
+    "spontaneously combusted",
+    "melted into a puddle on the sidewalk",
+    "turned into a slug and slithered away"
+];
+
 // Partial return random string function
 
 function returnRandomStoryString() {
     // It was 94 Fahrenheit outside, so :insertx: went for a walk. When they got to :inserty:, they stared in horror for a few moments, then :insertz:. Bob saw the whole thing, but was not surprised — :insertx: weighs 300 pounds, and it was a hot day.
+    const randomCharacter = randomValueFromArray(characters);
+    const randomLocation = randomValueFromArray(locations);
+    const randomAction = randomValueFromArray(actions);
+
+    let storyText = "It was 94 Fahrenheit outside, so ";
+    storyText += randomCharacter;
+    storyText += " went for a walk. When they got to ";
+    storyText += randomLocation;
+    storyText += ", they stared in horror for a few moments, then ";
+    storyText += randomAction;
+    storyText += ". Bob saw the whole thing, but was not surprised — ";
+    storyText += randomCharacter;
+    storyText += " weighs 300 pounds, and it was a hot day.";
 
     return storyText;
 }
@@ -44,16 +65,21 @@ function returnRandomStoryString() {
 generateBtn.addEventListener("click", generateStory);
 
 function generateStory() {
+    let nStory = returnRandomStoryString();
+
     if (customName.value !== "") {
         const name = customName.value;
+        nStory = nStory.replace("Bob", name);
     }
 
     if (document.getElementById("uk").checked) {
-        const weight = Math.round(300);
-        const temperature = Math.round(94);
+        const weight = Math.round(300 * 0.0714286);
+        const temperature = Math.round(94 * (5 / 9));
+        nStory = nStory.replace("300 pounds", `${weight} stone`);
+        nStory = nStory.replace("94 Fahrenheit", `${temperature} Celsius`);
     }
 
     // TODO: replace "" with the correct expression
-    story.textContent = "";
+    story.textContent = nStory;
     story.style.visibility = "visible";
 }
