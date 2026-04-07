@@ -20,3 +20,22 @@ const images = [
     { filename: "images/pic4.jpg", alt: "egyptian image" },
     { filename: "images/pic5.jpg", alt: "leaves" }
 ];
+
+// Looping through images and baseURL of the images
+const baseURL =
+    "https://raw.githubusercontent.com/mdn/learning-area/main/javascript/apis/domscripting/examples/images/";
+
+for (const image of images) {
+    const newImage = document.createElement("img");
+    newImage.setAttribute("src", baseURL + image.filename);
+    newImage.setAttribute("alt", image.alt);
+    newImage.tabIndex = 0;
+    thumbBar.appendChild(newImage);
+
+    newImage.addEventListener("click", updateDisplayedImage);
+    newImage.addEventListener("keydown", (e) => {
+        if (e.key === "Enter" || e.key === " ") {
+            updateDisplayedImage.call(newImage);
+        }
+    });
+}
