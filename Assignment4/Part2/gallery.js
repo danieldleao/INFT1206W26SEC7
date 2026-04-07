@@ -14,16 +14,15 @@ const overlay = document.querySelector(".overlay");
 
 // Creating data object
 const images = [
-    { filename: "images/pic1.jpg", alt: "the human eye" },
-    { filename: "images/pic2.jpg", alt: "rock in waves" },
-    { filename: "images/pic3.jpg", alt: "Pansies" },
-    { filename: "images/pic4.jpg", alt: "egyptian image" },
-    { filename: "images/pic5.jpg", alt: "leaves" }
+    { filename: "pic1.jpg", alt: "the human eye" },
+    { filename: "pic2.jpg", alt: "rock in waves" },
+    { filename: "pic3.jpg", alt: "Pansies" },
+    { filename: "pic4.jpg", alt: "egyptian image" },
+    { filename: "pic5.jpg", alt: "leaves" }
 ];
 
 // Looping through images and baseURL of the images
-const baseURL =
-    "https://raw.githubusercontent.com/mdn/learning-area/main/javascript/apis/domscripting/examples/images/";
+const baseURL = "";
 
 for (const image of images) {
     const newImage = document.createElement("img");
@@ -53,7 +52,4 @@ btn.addEventListener("click", () => {
         overlay.classList.remove("darken");
         btn.textContent = "Darken";
     }
-
-    // Toggle the darken class on the overlay using keyboard
-    btn.classList.toggle("darken");
 });
